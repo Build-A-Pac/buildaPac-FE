@@ -1,0 +1,16 @@
+<md-content>
+    <md-toolbar>
+      <div class="md-toolbar-tools">
+
+      <md-button class="compButton md-icon-button" ng-repeat="property in properties">{{ property }}</md-button>
+      <md-button class="compButton md-icon-button" ng-repeat="key in sortable_keys">{{ key }}</md-button>
+
+    </div>
+    </md-toolbar>
+  </md-content>
+  <ul class="complist">
+    <li ng-repeat="item in items"><input type="checkbox"><span>{{item.manufacturer}}</span>, <span>{{ item.salePrice }}</span>, <span>{{ item.name }}</span></li>
+  </ul>
+
+
+

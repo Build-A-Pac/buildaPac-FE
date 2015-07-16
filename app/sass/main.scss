@@ -62,9 +62,14 @@ section{
   height: 600px;
   margin-right: 60px;
   margin-top: 25px;
+  overflow: scroll;
 }
 
 .componentList{
   float: right;
 }
+
+// .components{
+//   overflow: hidden;
+// }
 

@@ -27,7 +27,8 @@ section {
   width: 60%;
   height: 600px;
   margin-right: 60px;
-  margin-top: 25px; }
+  margin-top: 25px;
+  overflow: scroll; }
 
 .componentList {
   float: right; }

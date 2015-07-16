@@ -26,7 +26,7 @@
         UserFactory.logOut();
       });
     }
-  }
+  };
 
 });
 
