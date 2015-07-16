@@ -1,0 +1,33 @@
+body {
+  background-color: #7F989C; }
+
+header {
+  height: 75px;
+  background-color: #66D9EF; }
+
+aside {
+  float: left;
+  margin-left: 5px;
+  width: 30%; }
+
+.jsonLists {
+  list-style: none;
+  font-size: 25px;
+  border: 2px solid #CBFEFE;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+a {
+  text-decoration: none; }
+
+section {
+  float: right;
+  border: 2px solid #CBFEFE;
+  width: 60%;
+  height: 600px;
+  margin-right: 60px;
+  margin-top: 25px; }
+
+.componentList {
+  float: right; }
