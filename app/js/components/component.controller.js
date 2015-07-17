@@ -8,7 +8,7 @@
 
     var url = HEROKU.URL + 'parts/' + $stateParams.component;
 
-    var sort_url = HEROKU.URL + 'sortable_keys/';
+    var sort_url = HEROKU.URL;
 
     $http.get(url).success( function (data) {
 
@@ -20,12 +20,12 @@
 
     });
 
-    // $http.get(sort_url).success( function (data) {
 
-    //   $scope.sortable_keys = data;
-    //   console.log(data);
-    // });
+   $http.get(sort_url).success( function (data) {
 
+      $scope.sortable_keys = data;
+      console.log('dd', data);
+    });
 
 
     //
