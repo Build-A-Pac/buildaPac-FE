@@ -3,13 +3,19 @@
       <div class="md-toolbar-tools">
 
       <md-button class="compButton md-icon-button" ng-repeat="property in properties">{{ property }}</md-button>
-<!--       <md-button class="compButton md-icon-button" ng-repeat="key in sortable_keys">{{ key }}</md-button> -->
+      <md-button class="compButton md-icon-button" ng-repeat="key in sortable_keys">{{ key }}</md-button>
+       <md-button md-no-ink class="addButton md-primary">Add Component</md-button>
+
 
     </div>
     </md-toolbar>
   </md-content>
   <ul class="complist">
-    <li ng-repeat="item in items"><input type="checkbox"><span>{{item.manufacturer}}</span>, <span>{{ item.salePrice }}</span>, <span>{{ item.name }}</span></li>
+    <li class="itemList" ng-repeat="item in items"><input type="checkbox">
+      <span>{{ item.manufacturer }}</span>,
+      <span>{{ item.salePrice }}</span>,
+      <span>{{ item.name }}</span>
+    </li>
   </ul>
 
 

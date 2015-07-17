@@ -63,11 +63,22 @@ section{
   margin-right: 60px;
   margin-top: 25px;
   overflow: scroll;
+  background-color: white;
+}
+
+.addButton{
+  float: right;
+}
+
+.itemList{
+  list-style: none;
+  background-color: #FE586B;
 }
 
 .componentList{
   float: right;
 }
+
 
 // .components{
 //   overflow: hidden;
