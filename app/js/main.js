@@ -23,7 +23,8 @@
     $stateProvider
     .state('home', {
       url: '/',
-      templateUrl: 'js/views/home.tpl.html'
+      templateUrl: 'js/views/home.tpl.html',
+      controller: 'ComponentCtrl'
     })
 
 

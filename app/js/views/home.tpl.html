@@ -17,8 +17,17 @@
     <h3>My Build</h3>
 
 
-  <ul class="contentList">this is a ul</ul>
+  <ul class="contentList">Components
 
+    {{ build }}
+
+    <li ng-repeat="item in build">
+
+      {{ item.name }} - {{ item.price }}
+
+    </li>
+
+  </ul>
 
 <form layout="column">
   <br>
