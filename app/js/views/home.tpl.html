@@ -1,4 +1,4 @@
-<h1>PC Build-A-PC</h1>
+
 <div class="bod">
 
 <aside>
@@ -15,8 +15,14 @@
 
   <div class="myBuild">
     <h3>My Build</h3>
+
+
 <form layout="column">
   <br>
+
+<div>
+  <ul class="contentList" ng-repeat="item in checked"><li>{{item.name}} : {{item.price}}</li></ul>
+</div>
   <md-content layout-padding class="autoScroll">
   <md-input-container class="md-icon-float">
   <label>PC Name</label>
@@ -25,6 +31,8 @@
   <md-button md-no-ink class="md-primary">Build It</md-button>
   </md-content>
 </form>
+
+
 
 
 

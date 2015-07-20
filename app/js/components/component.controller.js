@@ -15,6 +15,8 @@
 
       $scope.items = data.parts;
 
+      console.log('$i', $scope.items);
+
       $scope.sortable_keys = data.sortable_keys;
 
       $scope.details = data.parts.details;
@@ -25,10 +27,14 @@
 
       console.log(data);
 
+      $scope.checked = [];
+
 
     });
 
-
+$scope.toggleChecked = function (item, index) {
+    $scope.checked.push(item);
+  };
 
 
 
@@ -40,7 +46,7 @@
 
 
     //
-    $scope.properties = ['Brand', 'Price', 'Sale'];
+    $scope.properties = ['Brand', 'Price', 'Model'];
 
     // $scope.sortable_keys = [];
 

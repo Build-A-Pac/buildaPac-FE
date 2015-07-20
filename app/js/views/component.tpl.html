@@ -4,17 +4,18 @@
 
       <md-button class="compButton md-icon-button" ng-repeat="property in properties">{{ property }}</md-button>
       <md-button class="compButton md-icon-button" ng-repeat="key in sortable_keys">{{ key }}</md-button>
-       <md-button md-no-ink class="addButton md-primary">Add Component</md-button>
+       <md-button md-no-ink class="addButton" ng-click="addMe">Add Component</md-button>
 
 
     </div>
     </md-toolbar>
   </md-content>
   <ul class="complist">
-    <li class="itemList" ng-repeat="item in items"><input type="checkbox">
+    <li class="itemList" ng-repeat="item in items"><md-checkbox ng-model="data.cb1" aria-label="Checkbox 1" ng-click="clicked"></md-checkbox>
       <span>{{ item.manufacturer }}</span>,
-      <span>{{ item.salePrice }}</span>,
-      <span>{{ item.name }}</span>
+      <span>${{ item.salePrice }}</span>,
+      <span>{{ item.name }}</span>,
+<!--       <span>{{ item[sortingBy] || item.details[sortingBy] }}</span> -->
     </li>
   </ul>
 
