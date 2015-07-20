@@ -12,9 +12,10 @@
   </md-content>
   <ul class="complist">
     <li class="itemList" ng-repeat="item in items">
-      <md-checkbox aria-label="component" ng-click="toggle(item, selected)"></md-checkbox>
-      <span>{{ item.manufacturer }}</span>,
-      <span>${{ item.salePrice }}</span>,
-      <span>{{ item.name }}</span>,
+      <md-checkbox class="checkBox" aria-label="component" ng-click="toggle(item, selected)"></md-checkbox>
+      <span>{{ item.manufacturer }}</span> |
+      <span>${{ item.salePrice }}</span> |
+      <span>{{ item.name }}</span>
     </li>
   </ul>
+

@@ -1,6 +1,6 @@
-## Welcome to My Angular Project
+## Welcome to PC 4 Me!
 
-> I am your Readme.md file, you should probably update me.
+> This project is an attempt to recreate PC Part Picker and add some new features to it that make the user experience better.
 
 
 ## Usage

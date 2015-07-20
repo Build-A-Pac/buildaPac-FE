@@ -2,65 +2,60 @@
 <div class="bod">
 
 <aside>
+
+
   <ul class="jsonLists">
-    <a href="/#/cpu"><li>CPU</li></a>
-    <a href="/#/motherboard"><li>Motherboard</li></a>
-    <a href="/#/gpu"><li>Video Card</li></a>
-    <a href="/#/ram"><li>Memory</li></a>
-    <a href="/#/hard_drive"><li>Hard Drives</li></a>
-    <a href="/#/solid_state">Solid State Drive</a>
-    <a href="/#/psu"><li>Power Supply</li></a>
-    <a href="/#/computer_case"><li>Case</li></a>
+   <h2 class="compTitle">Components</h2>
+    <a class="navi" href="/#/cpu"><li>CPU</li></a>
+    <a class="navi" href="/#/motherboard"><li>Motherboard</li></a>
+    <a class="navi" href="/#/gpu"><li>Video Card</li></a>
+    <a class="navi" href="/#/ram"><li>Memory</li></a>
+    <a class="navi" href="/#/hard_drive"><li>Hard Drives</li></a>
+    <a class="navi" href="/#/solid_state">Solid State Drive</a>
+    <a class="navi" href="/#/psu"><li>Power Supply</li></a>
+    <a class="navi" href="/#/computer_case"><li>Case</li></a>
   </ul>
+
+
+
+
 
   <div class="myBuild">
-    <h3>My Build</h3>
+    <h2 class="buildTitle">My Build</h2>
+      <ul class="contentList">Components
+        {{ build }}
+         <li class="buildBlocks" ng-repeat="item in build">
+          hey i am max
+          {{ item.name }} - {{ item.price }}
+        </li>
+      </ul>
 
 
-  <ul class="contentList">Components
-
-    {{ build }}
-
-    <li ng-repeat="item in build">
-
-      {{ item.name }} - {{ item.price }}
-
-    </li>
-
-  </ul>
-
-<form layout="column">
-  <br>
-
-  <md-content layout-padding class="autoScroll">
-  <md-input-container class="md-icon-float">
-  <label>PC Name</label>
-  <input ng-model="user.name" type="text">
-  </md-input-container>
-  <md-button md-no-ink class="md-primary">Build It</md-button>
-  </md-content>
-</form>
-
-
-
-
-
-  </div>
+  <form layout="column">
+    <br>
+    <md-content layout-padding class="autoScroll">
+      <md-input-container class="md-icon-float">
+      <label>PC Name</label>
+      <input ng-model="user.name" type="text">
+      </md-input-container>
+      <md-button md-no-ink class="md-primary">Build It</md-button>
+    </md-content>
+  </form>
+</div> <!-- myBuild -->
 
 </aside>
 
-
-
 <section>
- <div class="components" ui-view>
+  <div class="components" ui-view>
 
-
-
-
-
-
-
- </div>
+  </div>
 </section>
 
 </div> <!-- bod -->
+
+
+
+
+
+
+

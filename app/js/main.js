@@ -32,6 +32,9 @@
 // login/register
 // **************
 
+
+
+
     .state('login', {
       url: '/login',
       templateUrl: 'js/user/login.tpl.html'
@@ -40,6 +43,18 @@
       url: '/register',
       templateUrl: 'js/user/register.tpl.html'
     })
+
+
+// *************
+// *autobuilder*
+// *************
+
+    .state ('autobuilder', {
+        url: '/autobuild',
+        templateUrl: 'js/views/autobuild.tpl.html'
+    })
+
+
 
     // ************
     // nested views
