@@ -32,9 +32,17 @@
 
     });
 
-$scope.toggleChecked = function (item, index) {
-    $scope.checked.push(item);
-  };
+    $scope.checked = function (index) {
+      $scope.checked.push($scope.items[index]);
+      };
+
+    $scope.addItem = function () {
+    $scope.items.push({
+      name: $scope.item.name,
+      price: $scope.item.price
+    });
+    }
+
 
 
 
