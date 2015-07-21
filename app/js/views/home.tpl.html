@@ -22,11 +22,9 @@
 
   <div class="myBuild">
     <h2 class="buildTitle">My Build</h2>
-      <ul class="contentList">Components
-        {{ build }}
-         <li class="buildBlocks" ng-repeat="item in build">
-          hey i am max
-          {{ item.name }} - {{ item.price }}
+      <ul class="contentList">
+         <li class="buildBlocks" ng-repeat="item in build track by $index">
+          {{ item.name }} - ${{ item.salePrice }}
         </li>
       </ul>
 

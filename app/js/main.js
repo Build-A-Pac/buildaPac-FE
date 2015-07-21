@@ -24,8 +24,9 @@
     .state('home', {
       url: '/',
       templateUrl: 'js/views/home.tpl.html',
-      controller: 'ComponentCtrl'
+      controller: 'ComponentHomeCtrl'
     })
+
 
 
 // **************
@@ -55,6 +56,14 @@
     })
 
 
+// *************
+// **My Builds**
+// *************
+
+    .state('myBuilds', {
+      url: '/mybuilds',
+      templateUrl: 'js/views/mybuilds.tpl.html'
+    })
 
     // ************
     // nested views
