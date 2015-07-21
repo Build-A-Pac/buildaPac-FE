@@ -20,28 +20,28 @@
 
 
 
-  <div class="myBuild">
-    <h2 class="buildTitle">My Build</h2>
-      <ul class="contentList">
-         <li class="buildBlocks" ng-repeat="item in build track by $index">
-          {{ item.name }} - ${{ item.salePrice }}
-        </li>
-      </ul>
-
-
-  <form layout="column">
+<form layout="column" ng-submit="addBuild()">
+    <div class="myBuild">
+      <h2 class="buildTitle">My Build</h2>
+        <ul class="contentList">
+           <li class="buildBlocks" ng-repeat="item in build track by $index">
+            {{ item.model }} - ${{ item.cost }}
+          </li>
+        </ul>
     <br>
-    <md-content layout-padding class="autoScroll">
-      <md-input-container class="md-icon-float">
-      <label>PC Name</label>
-      <input ng-model="user.name" type="text">
-      </md-input-container>
-      <md-button md-no-ink class="md-primary">Build It</md-button>
-    </md-content>
-  </form>
-</div> <!-- myBuild -->
-
+      <md-content layout-padding class="autoScroll">
+        <md-input-container class="md-icon-float">
+        <label>PC Name</label>
+        <input ng-model="user.name" type="text">
+        </md-input-container>
+        <md-button md-no-ink class="md-primary">Build It</md-button>
+      </md-content>
+    </div> <!-- myBuild -->
+</form>
 </aside>
+
+
+
 
 <section>
   <div class="components" ui-view>

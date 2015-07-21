@@ -13,6 +13,29 @@
 
     });
 
-  });
+    $scope.addBuild = function (build) {
 
+          $http.post(HEROKU.URL + '', build, HEROKU.CONFIG)
+          .success( function (){
+
+          $location.path('/mybuilds');
+
+          });
+
+    };
+
+  });
 }());
+
+
+
+
+
+
+
+
+
+
+
+
+
