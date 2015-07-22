@@ -140,6 +140,9 @@ section{
   list-style: none;
   background-color: #4741B8;
   color: #F7FEE8;
+  border: 1px solid #F7FEE8;
+  margin-bottom: 3px;
+  width: 60%;
 }
 
 .checkBox{
@@ -178,6 +181,12 @@ section{
   border-radius: 10px;
 }
 
+
+.dummy{
+  width: 60%;
+  padding: 5px;
+  border: 1px solid black;
+}
 
 // ************
 // ***footer***

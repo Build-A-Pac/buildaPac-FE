@@ -8,17 +8,18 @@
 
     <md-input-container class="md-icon-float">
       <label>Maximum Price</label>
-      <input type="text" placeholder="Maximum Price">
+      <input type="text" placeholder="Maximum Price" ng-model="total_price">
     </md-input-container>
-    <md-button md-no-ink class="md-primary">Build It</md-button>
+    <md-button md-no-ink class="md-primary" ng-click="autoBuild(total_price)">Build It</md-button>
 
   </md-content>
 
-<ul class="completeComp">
-  <li class="compComputer" ng-repeat="build in autoBuild">{{ build.total_price }} {{ build.parts }}</li>
+<ul class="completeComp" ng-repeat="build in autoBuild">
+ <li>CPU: {{ build.cpu.model }}</li>
+ <li>GPU: {{ build.gpu.model }}</li>
+
+ <!--  <li ng-repeat="price in totalPrice"> {{ price.total_price }}</li>
+  <li class="compComputer" >{{ build.total_price }} <span>{{ build.cpu.model }}</span> || <span>{{ build.gpu.model }}</span></li> -->
 </ul>
-
-
-
 
 
