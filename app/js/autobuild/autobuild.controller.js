@@ -17,7 +17,7 @@ $scope.autoBuild = function (total_price) {
       .success( function (data) {
 console.log(data);
 
-    // $scope.totalPrice = data;
+    $scope.totalPrice = data.total_price;
     $scope.autoBuild = data.parts;
 
     console.log(data.parts);
