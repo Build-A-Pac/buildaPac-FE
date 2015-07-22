@@ -52,7 +52,8 @@
 
     .state ('autobuilder', {
         url: '/autobuild',
-        templateUrl: 'js/views/autobuild.tpl.html'
+        templateUrl: 'js/views/autobuild.tpl.html',
+        controller: 'AutoCtrl'
     })
 
 
@@ -63,6 +64,7 @@
     .state('myBuilds', {
       url: '/mybuilds',
       templateUrl: 'js/views/mybuilds.tpl.html'
+
     })
 
     // ************

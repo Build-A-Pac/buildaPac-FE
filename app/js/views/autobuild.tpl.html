@@ -1,10 +1,10 @@
-<h2 class="md-display-2">Auto Build a Pc</h2>
+<h2 class="autoTitle">Auto Build a Pc</h2>
 
-<p>Put in a maximum price and we will build a pc for you!</p>
+<p class="autoScript">Put in your maximum price and hit 'Build It', and we will automatically build you a PC! </p>
 
-<div layout="column">
+<div  layout="column">
   <br>
-  <md-content layout-padding class="autoScroll">
+  <md-content class="buildItDiv" layout-padding class="autoScroll">
 
     <md-input-container class="md-icon-float">
       <label>Maximum Price</label>
@@ -14,4 +14,11 @@
 
   </md-content>
 
-<div class="completeComp"></div>
+<ul class="completeComp">
+  <li class="compComputer" ng-repeat="build in autoBuild">{{ build.total_price }} {{ build.parts }}</li>
+</ul>
+
+
+
+
+

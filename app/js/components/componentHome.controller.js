@@ -3,7 +3,7 @@
 
   angular.module('app')
 
-  .controller('ComponentHomeCtrl', function ($scope, $rootScope) {
+  .controller('ComponentHomeCtrl', function ($scope, $rootScope, $http, HEROKU) {
 
     $scope.build = [];
 
@@ -13,10 +13,13 @@
 
     });
 
-    $scope.addBuild = function (build) {
+    $scope.addBuild = function (build, buildName) {
 
-          $http.post(HEROKU.URL + '', build, HEROKU.CONFIG)
+      console.log(buildName, build);
+
+          $http.post(HEROKU.URL + 'computer/create', build, buildName, HEROKU.CONFIG)
           .success( function (){
+
 
           $location.path('/mybuilds');
 

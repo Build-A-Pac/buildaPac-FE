@@ -125,6 +125,8 @@ section{
   background-color: white;
 }
 
+
+
 .compButton{
   width: 80px;
 }
@@ -149,6 +151,32 @@ section{
 }
 
 
+// *************
+// **autobuild**
+// *************
+
+
+.autoTitle{
+  font-size: 60px;
+  color: #4741B8;
+  text-align: center;
+}
+
+.autoScript{
+  color: #4741B8;
+  text-align: center;
+
+}
+
+
+.buildItDiv{
+  width: 170px;
+  padding: 15px;
+  text-align: center;
+  margin-left: 600px;
+  border: 2px solid blue;
+  border-radius: 10px;
+}
 
 
 // ************

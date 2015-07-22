@@ -1,15 +1,15 @@
 <md-content>
     <md-toolbar>
       <div class="md-toolbar-tools">
-
-      <md-button class="compButton md-icon-button" ng-repeat="property in properties">{{ property }}</md-button>
-      <md-button class="compButton md-icon-button" ng-repeat="key in sortable_keys">{{ key }}</md-button>
-       <md-button md-no-ink class="addButton" ng-click="addMe(data)">Add Component</md-button>
-
-
-    </div>
+        <md-button class="compButton md-icon-button" ng-repeat="property in properties">{{ property }}</md-button>
+        <md-button class="compButton md-icon-button" ng-repeat="key in sortable_keys">{{ key }}</md-button>
+         <md-button md-no-ink class="addButton" ng-click="addMe(data)">Add Component</md-button>
+      </div>
     </md-toolbar>
-  </md-content>
+</md-content>
+
+
+
   <ul class="complist">
     <li class="itemList" ng-repeat="item in items">
       <md-checkbox class="checkBox" aria-label="component" ng-click="toggle(item, selected)"></md-checkbox>
