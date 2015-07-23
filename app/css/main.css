@@ -61,6 +61,10 @@ aside {
 .navis {
   color: #27180C; }
 
+.navis:hover {
+  transition: ease 0.5s;
+  color: #FE0000; }
+
 .compTitle {
   color: #27180C;
   text-decoration: underline;
@@ -110,8 +114,16 @@ section {
   background-color: #ECECEC;
   color: #24160B;
   border: 1px solid #F7FEE8;
+  border-radius: 7px;
   margin-bottom: 3px;
   width: 60%; }
+
+.listDiv {
+  margin-left: 35px;
+  margin-top: -23px; }
+
+.md-icon {
+  margin-top: 3px; }
 
 .checkBox {
   color: #F7FEE8; }
@@ -126,6 +138,10 @@ section {
 
 .autoScript {
   color: #382516;
+  text-align: center; }
+
+.savedBuilds {
+  font-size: 60px;
   text-align: center; }
 
 .buildItDiv {
@@ -145,6 +161,20 @@ section {
   opacity: 0; }
 
 .dummy {
-  width: 60%;
+  width: 40%;
   padding: 5px;
-  border: 1px solid black; }
+  border: 2px solid #24160B;
+  margin-left: 400px;
+  padding-left: 25px; }
+
+.dummy2 {
+  width: 40%;
+  padding: 5px;
+  border: 2px solid #24160B;
+  margin-left: 400px;
+  padding-left: 25px; }
+
+.completeComp {
+  border: 2px solid #24160B;
+  width: 30%;
+  margin-left: 455px; }

@@ -13,9 +13,9 @@
   <ul class="complist">
     <li class="itemList" ng-repeat="item in items">
       <md-checkbox class="checkBox" aria-label="component" ng-click="toggle(item, selected)"></md-checkbox>
-      <span>{{ item.make }}</span> |
-      <span>${{ item.cost }}</span> |
-      <span>{{ item.model }}</span>
+      <div class="listDiv"><span class="listMake">{{ item.make }}</span> |
+      <span class="listCost">${{ item.cost }}</span> |
+      <span class="listModel">{{ item.model }}</span></div>
     </li>
   </ul>
 
