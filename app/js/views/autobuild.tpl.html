@@ -2,20 +2,20 @@
 
 <p class="autoScript">Put in your maximum price and hit 'Build It', and we will automatically build you a PC! </p>
 
+
 <div  layout="column">
   <br>
-  <md-content class="buildItDiv" layout-padding class="autoScroll">
-
+    <md-content class="buildItDiv" layout-padding class="autoScroll">
     <md-input-container class="md-icon-float">
       <label>Maximum Price</label>
       <input type="text" placeholder="Maximum Price" ng-model="total_price">
-    </md-input-container>
-    <md-button md-no-ink class="md-primary" ng-click="autoBuild(total_price)">Build It</md-button>
+      </md-input-container>
+      <md-button md-no-ink class="md-primary" ng-click="autoBuild(total_price)">Build It</md-button>
+    </md-content>
 
-  </md-content>
 
 <ul class="completeComp" ng-repeat="build in autoBuild">
-    <span>Here's your computer!</span>
+    <h2>Here's your computer!</h2>
 
  <li>CPU: {{ build.cpu.model }}</li>
  <li>Motherboard: {{ build.motherboard.model }}</li>

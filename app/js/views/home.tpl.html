@@ -1,19 +1,20 @@
 
+
 <div class="bod">
 
-<aside>
+<aside flex>
 
 
   <ul class="jsonLists">
    <h2 class="compTitle">Components</h2>
-    <a class="navi" href="/#/cpu"><li>CPU</li></a>
-    <a class="navi" href="/#/motherboard"><li>Motherboard</li></a>
-    <a class="navi" href="/#/gpu"><li>Video Card</li></a>
-    <a class="navi" href="/#/ram"><li>Memory</li></a>
-    <a class="navi" href="/#/hard_drive"><li>Hard Drives</li></a>
-    <a class="navi" href="/#/solid_state">Solid State Drive</a>
-    <a class="navi" href="/#/psu"><li>Power Supply</li></a>
-    <a class="navi" href="/#/computer_case"><li>Case</li></a>
+    <a class="navis" href="/#/cpu"><li>CPU</li></a>
+    <a class="navis" href="/#/motherboard"><li>Motherboard</li></a>
+    <a class="navis" href="/#/gpu"><li>Video Card</li></a>
+    <a class="navis" href="/#/ram"><li>Memory</li></a>
+    <a class="navis" href="/#/hard_drive"><li>Hard Drives</li></a>
+    <a class="navis" href="/#/solid_state">Solid State Drive</a>
+    <a class="navis" href="/#/psu"><li>Power Supply</li></a>
+    <a class="navis" href="/#/computer_case"><li>Case</li></a>
   </ul>
 
 
@@ -31,10 +32,10 @@
     <br>
       <md-content layout-padding class="autoScroll">
         <md-input-container class="md-icon-float">
-        <label>PC Name</label>
+        <label class="label">PC Name</label>
         <input ng-model="buildName" type="text">
         </md-input-container>
-        <md-button md-no-ink class="md-primary">Build It</md-button>
+        <md-button md-no-ink class="buildBut">Build It</md-button>
       </md-content>
     </div> <!-- myBuild -->
 </form>
@@ -43,7 +44,7 @@
 
 
 
-<section>
+<section flex>
   <div class="components" ui-view>
 
   </div>

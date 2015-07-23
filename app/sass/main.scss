@@ -2,11 +2,22 @@
 
 $mainFont: 'Josefin Sans', sans-serif;
 
+$textColor: #382516;
+
+$otherFont: 'Magra', sans-serif;
 
  body{
-//   // background-image: url('../../images/background-final.jpg');
-   background-color: #FEAEC8;
-   font-family: $mainFont;
+background: rgba(226,226,226,1);
+background: -moz-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 8%, rgba(209,209,209,1) 50%, rgba(254,254,254,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(226,226,226,1)), color-stop(8%, rgba(219,219,219,1)), color-stop(50%, rgba(209,209,209,1)), color-stop(100%, rgba(254,254,254,1)));
+background: -webkit-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 8%, rgba(209,209,209,1) 50%, rgba(254,254,254,1) 100%);
+background: -o-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 8%, rgba(209,209,209,1) 50%, rgba(254,254,254,1) 100%);
+background: -ms-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 8%, rgba(209,209,209,1) 50%, rgba(254,254,254,1) 100%);
+background: linear-gradient(to bottom, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 8%, rgba(209,209,209,1) 50%, rgba(254,254,254,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe', GradientType=0 );
+   // background-color: #FEAEC8;
+   font-family: $otherFont;
+
  }
 
 
@@ -20,7 +31,16 @@ $mainFont: 'Josefin Sans', sans-serif;
 
 header{
   height: 150px;
-  background-color: #4741B8;
+  // background-color: #4741B8;
+// background: #382516;
+background: rgba(143,203,193,1);
+background: -moz-linear-gradient(-45deg, rgba(143,203,193,1) 0%, rgba(143,203,193,1) 50%, rgba(56,37,22,1) 50%, rgba(56,37,22,1) 100%);
+background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(143,203,193,1)), color-stop(50%, rgba(143,203,193,1)), color-stop(50%, rgba(56,37,22,1)), color-stop(100%, rgba(56,37,22,1)));
+background: -webkit-linear-gradient(-45deg, rgba(143,203,193,1) 0%, rgba(143,203,193,1) 50%, rgba(56,37,22,1) 50%, rgba(56,37,22,1) 100%);
+background: -o-linear-gradient(-45deg, rgba(143,203,193,1) 0%, rgba(143,203,193,1) 50%, rgba(56,37,22,1) 50%, rgba(56,37,22,1) 100%);
+background: -ms-linear-gradient(-45deg, rgba(143,203,193,1) 0%, rgba(143,203,193,1) 50%, rgba(56,37,22,1) 50%, rgba(56,37,22,1) 100%);
+background: linear-gradient(135deg, rgba(143,203,193,1) 0%, rgba(143,203,193,1) 50%, rgba(56,37,22,1) 50%, rgba(56,37,22,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8fcbc1', endColorstr='#382516', GradientType=1 );
 }
 
 h1{
@@ -30,7 +50,7 @@ h1{
   margin-right: 0;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 150px;
-  color: #F7FEE8;
+  color: #382516;
 }
 
 .navBar{
@@ -42,12 +62,12 @@ h1{
 }
 
 .navi{
-  color: #F7FEE8;
+  color: white;
 }
 
 .navi:hover{
   transition: ease 0.6s;
-   color: #FE586B;
+   color: #EEE349;
 }
 
 // *********
@@ -70,11 +90,19 @@ aside{
   padding-right: 15px;
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: #4741B8;
+  background-color: #8FCBC1;
+}
+
+.navis{
+  color: #27180C;
+}
+
+.navis:hover{
+
 }
 
 .compTitle{
-  color: #F7FEE8;
+  color: #27180C;
   text-decoration: underline;
   margin-bottom: 15px;
 }
@@ -88,7 +116,7 @@ a{
 // **************
 
 .buildTitle{
-  color: #F7FEE8;
+  color: $textColor;
   margin-left: 40px;
   text-decoration: underline;
 }
@@ -97,16 +125,16 @@ a{
 .myBuild{
   border: 2px solid #F7FEE8;
   border-radius: 10px;
-  background-color: #4741B8;
+  background-color: #8FCBC1;
 }
 
 
 .components{
-  background: #FEAEC8;
+  background: #8FCBC1;
 }
 
 .buildBlocks{
-  color: #F7FEE8;
+  color: $textColor;
 }
 
 // *************
@@ -131,6 +159,9 @@ section{
   width: 80px;
 }
 
+.md-toolbar-tools{
+  background-color: #382516;
+}
 
 .addButton{
   float: right;
@@ -138,8 +169,8 @@ section{
 
 .itemList{
   list-style: none;
-  background-color: #4741B8;
-  color: #F7FEE8;
+  background-color: #ECECEC;
+  color: #24160B;
   border: 1px solid #F7FEE8;
   margin-bottom: 3px;
   width: 60%;
@@ -161,15 +192,16 @@ section{
 
 .autoTitle{
   font-size: 60px;
-  color: #4741B8;
+  color: $textColor;
   text-align: center;
 }
 
 .autoScript{
-  color: #4741B8;
+  color: $textColor;
   text-align: center;
 
 }
+
 
 
 .buildItDiv{
@@ -177,8 +209,18 @@ section{
   padding: 15px;
   text-align: center;
   margin-left: 600px;
-  border: 2px solid blue;
+  border: 2px solid #24160B;
   border-radius: 10px;
+  background-color: #8FCBC1;
+}
+
+.buildBut{
+  color: #24160B;
+}
+
+.label{
+  color: #24160B;
+  opacity: 0;
 }
 
 

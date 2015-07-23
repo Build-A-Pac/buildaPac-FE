@@ -1,10 +1,24 @@
 body {
-  background-color: #FEAEC8;
-  font-family: "Josefin Sans", sans-serif; }
+  background: #e2e2e2;
+  background: -moz-linear-gradient(top, #e2e2e2 0%, #dbdbdb 8%, #d1d1d1 50%, #fefefe 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #e2e2e2), color-stop(8%, #dbdbdb), color-stop(50%, #d1d1d1), color-stop(100%, #fefefe));
+  background: -webkit-linear-gradient(top, #e2e2e2 0%, #dbdbdb 8%, #d1d1d1 50%, #fefefe 100%);
+  background: -o-linear-gradient(top, #e2e2e2 0%, #dbdbdb 8%, #d1d1d1 50%, #fefefe 100%);
+  background: -ms-linear-gradient(top, #e2e2e2 0%, #dbdbdb 8%, #d1d1d1 50%, #fefefe 100%);
+  background: linear-gradient(to bottom, #e2e2e2 0%, #dbdbdb 8%, #d1d1d1 50%, #fefefe 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe', GradientType=0 );
+  font-family: "Magra", sans-serif; }
 
 header {
   height: 150px;
-  background-color: #4741B8; }
+  background: #8fcbc1;
+  background: -moz-linear-gradient(-45deg, #8fcbc1 0%, #8fcbc1 50%, #382516 50%, #382516 100%);
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, #8fcbc1), color-stop(50%, #8fcbc1), color-stop(50%, #382516), color-stop(100%, #382516));
+  background: -webkit-linear-gradient(-45deg, #8fcbc1 0%, #8fcbc1 50%, #382516 50%, #382516 100%);
+  background: -o-linear-gradient(-45deg, #8fcbc1 0%, #8fcbc1 50%, #382516 50%, #382516 100%);
+  background: -ms-linear-gradient(-45deg, #8fcbc1 0%, #8fcbc1 50%, #382516 50%, #382516 100%);
+  background: linear-gradient(135deg, #8fcbc1 0%, #8fcbc1 50%, #382516 50%, #382516 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8fcbc1', endColorstr='#382516', GradientType=1 ); }
 
 h1 {
   margin: 0px;
@@ -13,7 +27,7 @@ h1 {
   margin-right: 0;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 150px;
-  color: #F7FEE8; }
+  color: #382516; }
 
 .navBar {
   float: right;
@@ -23,11 +37,11 @@ h1 {
   color: #F7FEE8; }
 
 .navi {
-  color: #F7FEE8; }
+  color: white; }
 
 .navi:hover {
   transition: ease 0.6s;
-  color: #FE586B; }
+  color: #EEE349; }
 
 aside {
   float: left;
@@ -42,10 +56,13 @@ aside {
   padding-right: 15px;
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: #4741B8; }
+  background-color: #8FCBC1; }
+
+.navis {
+  color: #27180C; }
 
 .compTitle {
-  color: #F7FEE8;
+  color: #27180C;
   text-decoration: underline;
   margin-bottom: 15px; }
 
@@ -53,20 +70,20 @@ a {
   text-decoration: none; }
 
 .buildTitle {
-  color: #F7FEE8;
+  color: #382516;
   margin-left: 40px;
   text-decoration: underline; }
 
 .myBuild {
   border: 2px solid #F7FEE8;
   border-radius: 10px;
-  background-color: #4741B8; }
+  background-color: #8FCBC1; }
 
 .components {
-  background: #FEAEC8; }
+  background: #8FCBC1; }
 
 .buildBlocks {
-  color: #F7FEE8; }
+  color: #382516; }
 
 section {
   float: right;
@@ -82,13 +99,16 @@ section {
 .compButton {
   width: 80px; }
 
+.md-toolbar-tools {
+  background-color: #382516; }
+
 .addButton {
   float: right; }
 
 .itemList {
   list-style: none;
-  background-color: #4741B8;
-  color: #F7FEE8;
+  background-color: #ECECEC;
+  color: #24160B;
   border: 1px solid #F7FEE8;
   margin-bottom: 3px;
   width: 60%; }
@@ -101,11 +121,11 @@ section {
 
 .autoTitle {
   font-size: 60px;
-  color: #4741B8;
+  color: #382516;
   text-align: center; }
 
 .autoScript {
-  color: #4741B8;
+  color: #382516;
   text-align: center; }
 
 .buildItDiv {
@@ -113,8 +133,16 @@ section {
   padding: 15px;
   text-align: center;
   margin-left: 600px;
-  border: 2px solid blue;
-  border-radius: 10px; }
+  border: 2px solid #24160B;
+  border-radius: 10px;
+  background-color: #8FCBC1; }
+
+.buildBut {
+  color: #24160B; }
+
+.label {
+  color: #24160B;
+  opacity: 0; }
 
 .dummy {
   width: 60%;
