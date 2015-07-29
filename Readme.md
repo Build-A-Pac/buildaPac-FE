@@ -4,6 +4,8 @@
 
 >We have added a feature that allows the user to auto-generate a computer build. All of the components in the auto-build are compatible, and a total price is included in the build.
 
+>This project took place over the course of three weeks with 2 team members.
+
 
 ## Usage
 
