@@ -2,6 +2,8 @@
 
 > This project is an attempt to recreate PC Part Picker and add some new features to it that make the user experience better.
 
+>We have added a feature that allows the user to auto-generate a computer build. All of the components in the auto-build are compatible, and a total price is included in the build.
+
 
 ## Usage
 
