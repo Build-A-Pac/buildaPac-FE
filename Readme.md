@@ -6,6 +6,8 @@
 
 >This project took place over the course of three weeks with 2 team members.
 
+>Deployed Site: http://development.pc4me.divshot.io/#/cpu
+
 
 ## Usage
 
